@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #e8f4fc;
+}
+
+.analysis-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  padding-bottom: 5rem;
+  padding-top: 5rem;      /* extra space before page break */
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 2rem auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.analysis-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1f3a5f;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.chart-wrapper {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto 2rem;
+  background-color: #ffffff; /* ensure white background in PDF */
+}
+
+.chart-wrapper canvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.analysis-card {
+  background: #fafbfc;
+  padding: 1.75rem;
+  border-radius: 8px;
+  border: 1px solid #dde4ec;
+  margin-bottom: 2rem;
+}
+
+.analysis-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1f3a5f;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.analysis-line {
+  margin: 0.75rem 0;
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #333;
+}
+
+.download-btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #1f3a5f;
+  color: white;
+  padding: 0.75rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.download-btn:hover {
+  background-color: #16304a;
+}
+
+@media (max-width: 600px) {
+  .analysis-container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .analysis-title {
+    font-size: 1.6rem;
+  }
+  .chart-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+}
