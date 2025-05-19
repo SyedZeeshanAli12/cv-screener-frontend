@@ -12,7 +12,6 @@ html, body {
   padding: 2rem;
   padding-bottom: 5rem;
   padding-top: 5rem;      /* extra space before page break */
-  border-radius: 10px;
   max-width: 900px;
   margin: 2rem auto;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -94,4 +93,43 @@ html, body {
     width: 180px;
     height: 180px;
   }
+}
+.analysis-checklist {
+  background: #ffffff;
+  border-left: 5px solid #00c853; /* green indicator stripe */
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.analysis-checklist h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.analysis-checklist ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.analysis-checklist li {
+  font-size: 0.95rem;
+  padding: 6px 0;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.analysis-checklist li::before {
+  content: '✅';
+  margin-right: 6px;
+  color: #00c853;
 }

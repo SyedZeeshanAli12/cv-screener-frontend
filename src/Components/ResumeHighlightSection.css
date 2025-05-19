@@ -1,0 +1,51 @@
+.highlight-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px 30px;
+  flex-wrap: wrap;
+  background: #f9fbfd;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.highlight-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.highlight-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1c1c1c;
+  margin-bottom: 24px;
+}
+
+.highlight-points {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.highlight-check {
+  color: #34c759;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.highlight-image-wrapper {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.highlight-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}

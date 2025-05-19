@@ -1,0 +1,81 @@
+/* Highlight only the heading with background */
+.insights-heading-wrapper {
+  width: 100%;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-left: calc(-50vw + 50%); */
+  background-color: #8df5a4;
+  /* padding: 60px 20px; */
+  text-align: center;
+}
+
+
+.insights-heading {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.insights-heading h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #3c3c3c;
+}
+
+.insights-heading p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* Remaining content section */
+.resume-insights-full {
+  width: 100vw;
+  background: #fdfdfd;
+    margin-left: calc(-50vw + 50%);
+
+}
+
+.insights-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.insight-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+}
+
+.insight-card:hover {
+  transform: translateY(-4px);
+}
+
+.insight-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.insight-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.insight-card p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
